@@ -117,7 +117,7 @@ export function ContactSection({ onShowToast }) {
                 </div>
                 <div>
                   <div className="contact-architect-name">Arnold A. Magalona</div>
-                  <div className="contact-architect-role">Computer Engineer & Full-Stack Architect</div>
+                  <div className="contact-architect-role">Director, ICT Systems & Services • Full-Stack Architect</div>
                   <div className="contact-architect-loc">
                     <MapPin size={12} color="#06b6d4" />
                     <span>Surigao City, Caraga Region, Philippines</span>

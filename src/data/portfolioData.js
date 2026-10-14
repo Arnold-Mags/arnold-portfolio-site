@@ -1,9 +1,9 @@
 export const profileData = {
   name: "Arnold A. Magalona",
   titles: [
+    "Director, ICT Systems and Services",
     "Full-Stack Web Developer",
     "System Architect & Engineer",
-    "Graphics & UI/UX Designer",
     "Computer Engineer"
   ],
   headline: "Engineering robust full-stack web applications, custom enterprise systems, and seamless digital experiences.",
@@ -17,7 +17,7 @@ export const profileData = {
     institution: "St. Paul University Surigao"
   },
   status: "Available for High-Impact Projects & Consultations",
-  summary: "Results-driven Computer Engineer and Full-Stack Developer with extensive experience architecting mission-critical enterprise systems, campus-wide portals, secure database frameworks, and high-converting modern web platforms. Proven track record in public sector ICT planning (DICT) and higher-education enterprise digitization (SPUS).",
+  summary: "Results-driven Computer Engineer, Director of ICT Systems and Services at SPUS, and Full-Stack Architect with extensive experience directing institutional IT operations, managing enterprise projects, and architecting campus-wide portals, secure database frameworks, and high-converting web platforms.",
   stats: [
     { label: "Years of Experience", value: "8+", suffix: "Years" },
     { label: "Enterprise Systems Built", value: "5+", suffix: "Core Systems" },
@@ -246,6 +246,20 @@ export const coreCompetencies = [
 ];
 
 export const careerTimeline = [
+  {
+    period: "2026 – PRESENT",
+    role: "Director, ICT Systems and Services",
+    organization: "St. Paul University Surigao (SPUS-ICT)",
+    location: "Surigao City, Philippines",
+    badge: "Executive Leadership & Directorship",
+    isCurrent: true,
+    highlights: [
+      "Directs and oversees the entire operations, technical workforce, and day-to-day service delivery of the university ICT office.",
+      "Spearheads institutional IT Project Management—directing development lifecycles, enterprise system rollouts, and multi-department digitization.",
+      "Steers campus-wide ICT modernization, network infrastructure reliability, cybersecurity protocols, and secure database architecture.",
+      "Leads strategic technology roadmapping and operational alignment with university executive leadership to empower academic and administrative units."
+    ]
+  },
   {
     period: "2021 – 2022",
     role: "Planning Officer 1",

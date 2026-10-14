@@ -49,11 +49,11 @@ export function Hero({ onOpenContactModal, onExploreProjects }) {
 
             {/* Roles Bar */}
             <div className="hero-roles-bar">
+              <span style={{ color: '#6ee7b7' }}>Director, ICT Systems</span>
+              <span className="role-separator">•</span>
               <span>Full-Stack Web</span>
               <span className="role-separator">•</span>
               <span>Enterprise Systems</span>
-              <span className="role-separator">•</span>
-              <span>Graphics & UI/UX</span>
               <span className="role-separator">•</span>
               <span>Computer Engineer</span>
             </div>
@@ -183,9 +183,9 @@ export function Hero({ onOpenContactModal, onExploreProjects }) {
                   </div>
                   <div className="terminal-meta-rows">
                     <div><span className="terminal-key">name:</span> <span className="terminal-val">"Arnold A. Magalona"</span></div>
+                    <div><span className="terminal-key">current:</span> <span className="terminal-val" style={{ color: '#6ee7b7' }}>"Director, ICT Systems & Services"</span></div>
+                    <div><span className="terminal-key">office:</span> <span className="terminal-val">"SPUS-ICT (2026–Present)"</span></div>
                     <div><span className="terminal-key">degree:</span> <span className="terminal-val">"B.S. Computer Engineering"</span></div>
-                    <div><span className="terminal-key">institution:</span> <span className="terminal-val">"SPUS (2011–2017)"</span></div>
-                    <div><span className="terminal-key">location:</span> <span className="terminal-val">"Surigao City, PH"</span></div>
                     <div><span className="terminal-key">specialties:</span> <span style={{ color: '#bae6fd', fontSize: '0.78rem' }}>["Web", "ERP/HRMS", "RFID", "SQL"]</span></div>
                   </div>
                 </div>

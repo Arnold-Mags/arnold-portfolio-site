@@ -13,7 +13,7 @@ export function ExperienceTimeline() {
             Professional Experience & <span className="text-gradient-cyan">Track Record</span>
           </h2>
           <p className="section-description">
-            Demonstrated leadership across government digital transformation initiatives (DICT) and multi-year institutional enterprise system engineering (SPUS).
+            Demonstrated executive leadership as Director of ICT Systems & Services at SPUS, public sector ICT planning at DICT, and multi-year institutional enterprise system engineering.
           </p>
         </div>
 
@@ -23,18 +23,28 @@ export function ExperienceTimeline() {
 
           {careerTimeline.map((item, index) => (
             <div key={index} className="timeline-item">
-              <div className="timeline-dot">
-                <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#22d3ee' }}></div>
+              <div 
+                className="timeline-dot"
+                style={item.isCurrent ? { borderColor: '#10b981', boxShadow: '0 0 16px rgba(16, 185, 129, 0.5)' } : {}}
+              >
+                <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: item.isCurrent ? '#10b981' : '#22d3ee' }}></div>
               </div>
 
-              <div className="timeline-card">
+              <div 
+                className={`timeline-card ${item.isCurrent ? 'timeline-card-current' : ''}`}
+                style={item.isCurrent ? { borderColor: 'rgba(16, 185, 129, 0.35)', boxShadow: '0 10px 30px -10px rgba(0, 0, 0, 0.6), 0 0 25px -8px rgba(16, 185, 129, 0.25)' } : {}}
+              >
                 <div className="timeline-meta">
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <Calendar size={15} color="#22d3ee" />
-                    <span className="timeline-period">{item.period}</span>
+                    <Calendar size={15} color={item.isCurrent ? '#10b981' : '#22d3ee'} />
+                    <span className="timeline-period" style={item.isCurrent ? { color: '#6ee7b7', fontWeight: 700 } : {}}>{item.period}</span>
                   </div>
-                  <span className="badge-cyan" style={{ fontSize: '0.74rem' }}>
-                    {item.badge}
+                  <span 
+                    className={item.isCurrent ? 'badge-emerald' : 'badge-cyan'} 
+                    style={{ fontSize: '0.74rem', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                  >
+                    {item.isCurrent && <span className="radar-pulse"></span>}
+                    <span>{item.badge}</span>
                   </span>
                 </div>
 
