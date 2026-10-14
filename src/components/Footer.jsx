@@ -94,7 +94,7 @@ export function Footer() {
             </div>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.88rem', color: '#94a3b8', fontFamily: 'var(--font-mono)' }}>
               <li><a href="https://spus.edu.ph" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8' }}>spus.edu.ph ↗</a></li>
-              <li><a href="https://tradehubogistics.com" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8' }}>tradehubogistics.com ↗</a></li>
+              <li><a href="https://tradehublogistics.com" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8' }}>tradehublogistics.com ↗</a></li>
               <li><a href="https://docmonaclinic.online" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8' }}>docmonaclinic.online ↗</a></li>
               <li><a href="https://itero-ai.online" target="_blank" rel="noopener noreferrer" style={{ color: '#38bdf8' }}>itero-ai.online ↗</a></li>
             </ul>

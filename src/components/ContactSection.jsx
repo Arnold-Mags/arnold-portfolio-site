@@ -105,8 +105,28 @@ export function ContactSection({ onShowToast }) {
                 Have an enterprise system requirement, a live web application project, or need database architecture consulting? Reach out via email, phone, or the direct form.
               </p>
 
+              {/* Architect Profile Headshot Card */}
+              <div className="contact-architect-badge">
+                <div className="contact-architect-avatar-wrap">
+                  <img 
+                    src="/arnold-photo.jpg" 
+                    alt="Arnold A. Magalona" 
+                    className="contact-architect-img" 
+                  />
+                  <span className="contact-architect-online"></span>
+                </div>
+                <div>
+                  <div className="contact-architect-name">Arnold A. Magalona</div>
+                  <div className="contact-architect-role">Computer Engineer & Full-Stack Architect</div>
+                  <div className="contact-architect-loc">
+                    <MapPin size={12} color="#06b6d4" />
+                    <span>Surigao City, Caraga Region, Philippines</span>
+                  </div>
+                </div>
+              </div>
+
               {/* Direct Info List */}
-              <div className="direct-contact-list" style={{ marginTop: '24px' }}>
+              <div className="direct-contact-list" style={{ marginTop: '20px' }}>
                 {/* Email Item */}
                 <div className="direct-contact-item">
                   <div className="contact-item-left">

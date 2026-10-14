@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, FacebookIcon } from './SocialIcons';
 import { profileData } from '../data/portfolioData';
+import arnoldPhoto from '../assets/arnold-photo.jpg';
 
 export function Hero({ onOpenContactModal, onExploreProjects }) {
   return (
@@ -24,8 +25,16 @@ export function Hero({ onOpenContactModal, onExploreProjects }) {
         <div className="hero-grid">
           {/* Left Column: Headline & Bio */}
           <div className="hero-content">
-            {/* Live Availability Badge */}
-            <div className="hero-status-tag">
+            {/* Live Availability Badge & Profile Pill */}
+            <div className="hero-status-pill">
+              <div className="hero-avatar-mini-wrap">
+                <img 
+                  src={arnoldPhoto} 
+                  alt="Arnold A. Magalona" 
+                  className="hero-avatar-mini" 
+                />
+                <span className="hero-avatar-status-dot"></span>
+              </div>
               <span className="radar-pulse"></span>
               <span style={{ color: '#22d3ee', fontWeight: 600 }}>{profileData.status}</span>
             </div>
@@ -153,19 +162,33 @@ export function Hero({ onOpenContactModal, onExploreProjects }) {
             </div>
 
             <div className="terminal-body">
-              <div className="terminal-row">
-                <span className="terminal-prompt">$</span>
-                <span>whoami --role</span>
-              </div>
-              <div style={{ paddingLeft: '18px', color: '#f1f5f9' }}>
-                <span className="terminal-key">name:</span> <span className="terminal-val">"Arnold A. Magalona"</span><br/>
-                <span className="terminal-key">degree:</span> <span className="terminal-val">"B.S. Computer Engineering"</span><br/>
-                <span className="terminal-key">specialties:</span> [
-                <span style={{ color: '#bae6fd' }}>"Full-Stack Web"</span>, 
-                <span style={{ color: '#bae6fd' }}>"Custom ERP/HRMS"</span>, 
-                <span style={{ color: '#bae6fd' }}>"RFID/IoT Systems"</span>,
-                <span style={{ color: '#bae6fd' }}>"SQL Architect"</span>
-                ]
+              {/* Architect Identification Profile Card */}
+              <div className="terminal-architect-card">
+                <div className="terminal-photo-wrapper">
+                  <img 
+                    src={arnoldPhoto} 
+                    alt="Arnold A. Magalona - Computer Engineer" 
+                    className="terminal-photo" 
+                  />
+                  <div className="terminal-photo-badge">
+                    <CheckCircle2 size={12} color="#10b981" />
+                    <span>VERIFIED</span>
+                  </div>
+                </div>
+
+                <div className="terminal-architect-details">
+                  <div className="terminal-row" style={{ marginBottom: '6px' }}>
+                    <span className="terminal-prompt">$</span>
+                    <span>whoami --role</span>
+                  </div>
+                  <div className="terminal-meta-rows">
+                    <div><span className="terminal-key">name:</span> <span className="terminal-val">"Arnold A. Magalona"</span></div>
+                    <div><span className="terminal-key">degree:</span> <span className="terminal-val">"B.S. Computer Engineering"</span></div>
+                    <div><span className="terminal-key">institution:</span> <span className="terminal-val">"SPUS (2011–2017)"</span></div>
+                    <div><span className="terminal-key">location:</span> <span className="terminal-val">"Surigao City, PH"</span></div>
+                    <div><span className="terminal-key">specialties:</span> <span style={{ color: '#bae6fd', fontSize: '0.78rem' }}>["Web", "ERP/HRMS", "RFID", "SQL"]</span></div>
+                  </div>
+                </div>
               </div>
 
               <div className="terminal-row" style={{ marginTop: '8px' }}>

@@ -62,8 +62,12 @@ export function Navbar({ onOpenContactModal }) {
               onClick={(e) => handleNavClick(e, '#hero')}
               aria-label="Arnold A. Magalona - Home"
             >
-              <div className="brand-icon">
-                AM
+              <div className="brand-icon" style={{ overflow: 'hidden', padding: 0 }}>
+                <img 
+                  src="/arnold-photo.jpg" 
+                  alt="Arnold A. Magalona" 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
               </div>
               <div>
                 <div className="brand-text-name">Arnold A. Magalona</div>
@@ -142,7 +146,13 @@ export function Navbar({ onOpenContactModal }) {
           <div className="mobile-drawer" onClick={(e) => e.stopPropagation()}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <div className="brand-logo">
-                <div className="brand-icon">AM</div>
+                <div className="brand-icon" style={{ overflow: 'hidden', padding: 0 }}>
+                  <img 
+                    src="/arnold-photo.jpg" 
+                    alt="Arnold A. Magalona" 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                </div>
                 <div>
                   <div className="brand-text-name">Arnold Magalona</div>
                   <div className="brand-text-sub">PORTFOLIO</div>

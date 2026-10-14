@@ -55,8 +55,8 @@ export const clientProjects = [
   {
     id: "tradehub",
     name: "Tradehub Logistics",
-    domain: "tradehubogistics.com",
-    url: "https://tradehubogistics.com",
+    domain: "tradehublogistics.com",
+    url: "https://tradehublogistics.com",
     category: "Logistics & Supply Chain",
     badge: "Commercial Platform",
     tagline: "Modern logistics management web platform and supply chain customer gateway.",
